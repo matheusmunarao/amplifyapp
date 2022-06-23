@@ -40,7 +40,7 @@
         "s3TemplateURL": "https://s3.amazonaws.com/amplify-amplifyapp-dev-232219-deployment/amplify-cfn-templates/auth/amplifyapp7387a878-cloudformation-template.json",
         "logicalId": "authamplifyapp7387a878"
       },
-      "lastPushTimeStamp": "2022-06-23T02:40:20.745Z",
+      "lastPushTimeStamp": "2022-06-23T05:01:32.909Z",
       "output": {
         "UserPoolId": "us-east-1_WM5ekJ4uf",
         "AppClientIDWeb": "3hn3kd8pgkmutnon3ap3609gen",
@@ -51,6 +51,49 @@
         "UserPoolName": "amplifyapp7387a878_userpool_7387a878"
       },
       "lastPushDirHash": "Cr9e8688cUxXr9oXIbfkj96qYls="
+    }
+  },
+  "api": {
+    "amplifyapp": {
+      "service": "AppSync",
+      "providerPlugin": "awscloudformation",
+      "dependsOn": [],
+      "output": {
+        "authConfig": {
+          "defaultAuthentication": {
+            "authenticationType": "API_KEY",
+            "apiKeyConfig": {
+              "apiKeyExpirationDays": 7
+            }
+          },
+          "additionalAuthenticationProviders": []
+        },
+        "GraphQLAPIIdOutput": "uhfy4ue55nf4nlfnpphaghm24m",
+        "GraphQLAPIEndpointOutput": "https://nrnkgyw2kfhcbg7yi26epgibq4.appsync-api.us-east-1.amazonaws.com/graphql",
+        "GraphQLAPIKeyOutput": "da2-2iud4rt26zh55iqzterfnvctyy"
+      },
+      "lastPushTimeStamp": "2022-06-23T05:01:32.910Z",
+      "providerMetadata": {
+        "s3TemplateURL": "https://s3.amazonaws.com/amplify-amplifyapp-dev-232219-deployment/amplify-cfn-templates/api/cloudformation-template.json",
+        "logicalId": "apiamplifyapp"
+      }
+    }
+  },
+  "storage": {
+    "imagestorage": {
+      "service": "S3",
+      "providerPlugin": "awscloudformation",
+      "dependsOn": [],
+      "lastPushTimeStamp": "2022-06-23T05:01:33.568Z",
+      "providerMetadata": {
+        "s3TemplateURL": "https://s3.amazonaws.com/amplify-amplifyapp-dev-232219-deployment/amplify-cfn-templates/storage/cloudformation-template.json",
+        "logicalId": "storageimagestorage"
+      },
+      "output": {
+        "BucketName": "amplify-bucket232219-dev",
+        "Region": "us-east-1"
+      },
+      "lastPushDirHash": "H7MMI2L7bVRrIoShL8GJdS92Aos="
     }
   }
 }
